@@ -1,0 +1,12 @@
+var settings = {
+    "url": "https://v1.nocodeapi.com/freyarion/google_sheets/yXgiuzJdirRQvoGe?tabId=Anchor",
+    "method": "get",
+    "timeout": 0,
+    "headers": {
+        "Content-Type": "application/json"
+    },
+};
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
